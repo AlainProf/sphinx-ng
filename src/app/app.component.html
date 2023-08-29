@@ -1,0 +1,16 @@
+<h1 id="fond">{{title}}</h1>
+
+votre essai:<input [(ngModel)]="essai"><br>
+
+
+
+
+<button (click)="validerEssai()">Valider</button>
+
+<h4>{{nbEssais}} essai(s)</h4>
+
+
+<div *ngIf="tropHaut">Trop haut</div>
+<div *ngIf="tropBas">Trop bas</div>
+<div *ngIf="bingo">Bravo!!</div>
+
